@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>Order Now</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    </head>
+    <style>
+    .col-sm-3{
+        width:37%;
+    }
+    </style>
+    <body>
+         <div class="container">
+                <div class="row"  style="text-align: center;">
+                        <div class="btn-group" data-toggle="buttons" >
+                                <label class="btn btn-danger" id="OrderNow" style="background-color: orange; border: orange; border-radius: 25px; border-top-right-radius: 0px;     border-bottom-right-radius: 0px;" >
+                                   Order Now
+                                </label>
+                                <label class="btn btn-light" id="BookATable" style=" background-color: #E2E6EA;  border-radius: 25px; border-top-left-radius: 0px;     border-bottom-left-radius: 0px;" >
+                                  Book a Table
+                                </label>
+                                
+                              </div>
+                </div>
+         </div>
+<script>
+            
+
+$("#BookATable").click(function(){
+    
+    $("#BookATable").css('background-color', 'orange');
+    $("#BookATable").css('color', 'white');
+    $("#OrderNow").css('background-color', '#E2E6EA');
+   $(".Order_Now").css('display','none');
+   $(".Book_A_Table").css('display','block');
+    $("#OrderNow").css('color', 'black');
+});
+
+</script>
+
+<script>
+            
+
+        $("#OrderNow").click(function(){
+          
+            $("#OrderNow").css('background-color', 'orange');
+            $("#OrderNow").css('color', 'white');
+            $("#BookATable").css('background-color', '#E2E6EA');
+           $(".Order_Now").css('display','block');
+           $(".Book_A_Table").css('display','none');
+            $("#BookATable").css('color', 'black');
+        });
+        
+</script>
+
+<script>
+        $(document).ready(function(){
+          $(".bg-secondary").click(function(){
+            alert("Table Already Occupied. Please Select Another Table");
+          });
+        });
+</script>
+            <div class="Order_Now">
+                    <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 40px; font-weight: 400;">
+                                        Order Now
+                                    </div>
+                                    <div style="font-family: Arial, Helvetica, sans-serif; font-size:20px;">
+                                        Choose a table to initiate Order
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="container">
+                            <div class="row ">
+                                <div class="col-sm-3 col-lg-2 " style="padding-top: 20px;">
+                                    <div class="card bg-success " style="width: 57%;
+                                    height: 77px;">
+                                    <div class="card-body" style="color:white; text-align: center;">1</div>
+                                    </div>
+                                </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                <div class="card bg-success" style="width: 57%;
+                                height: 77px;">
+                                     <div class="card-body " style="color:white; text-align: center;">3</div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                <div class="card bg-success" style="width: 57%;
+                                height: 77px;">
+                                      <div class="card-body" style="color:white; text-align: center;">2</div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                <div class="card bg-secondary" style="width: 57%;
+                                 height: 77px;">
+                                    <div class="card-body" style="color:white; text-align: center;">4</div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                    <div class="card bg-secondary" style="width: 57%;
+                                     height: 77px;">
+                                        <div class="card-body" style="color:white; text-align: center;">5</div>
+                                    </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                    <div class="card bg-secondary" style="width: 57%;
+                                     height: 77px;">
+                                        <div class="card-body" style="color:white; text-align: center;">5</div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row" style="padding-top: 20px;">
+                                <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                    <div class="card bg-secondary" style="width: 57%;
+                                    height: 77px;">
+                                    <div class="card-body" style="color:white; text-align: center;">5</div>
+                                    </div>
+                                </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                <div class="card bg-secondary" style="width: 57%;
+                                height: 77px;">
+                                     <div class="card-body" style="color:white; text-align: center;">5</div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                <div class="card bg-secondary" style="width: 57%;
+                                height: 77px;">
+                                      <div class="card-body" style="color:white; text-align: center;">5</div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                <div class="card bg-secondary" style="width: 57%;
+                                 height: 77px;">
+                                    <div class="card-body" style="color:white; text-align: center;">5</div>
+                                </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                    <div class="card bg-secondary" style="width: 57%;
+                                     height: 77px;">
+                                        <div class="card-body" style="color:white; text-align: center;">5</div>
+                                    </div>
+                            </div>
+            
+                            <div class="col-sm-3 col-lg-2" style="padding-top: 20px;">
+                                    <div class="card bg-secondary" style="width: 57%;
+                                     height: 77px;">
+                                        <div class="card-body" style="color:white; text-align: center;">5</div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                            <div class="row" style="margin-top:40px;">
+                                <div class="col-sm-6 " >
+                                        
+                                        <i class="fa fa-square" aria-hidden="true" style="color:#28A745;"></i>
+                                        Available
+                                        
+                                </div>
+            
+                                <div class="col-sm-6">
+                                        <i class="fa fa-square-o fa-success" aria-hidden="true"></i>
+                                      
+                                          Occupied
+                                      
+                                </div>
+                            </div>
+                    </div>
+            </div>
+
+            <div class="Book_A_Table" style="display: none;">
+            <div class="container">
+                <div class="row">
+                <div class="col-sm-12" style=" padding-bottom: 30px; padding-top:20px;">
+                    <div style="font-family: Arial, Helvetica, sans-serif; font-size: 40px;">
+                        Book A Table
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" style="padding-bottom:20px;">
+                            <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+                                    for:
+                                </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-12" >
+                        <form>
+                                <div class="form-group">
+                                        <input type="number" class="form-control" id="num" placeholder="No. Of People" name="text1">
+                                        <button type="button" class="btn btn-success" style="margin-top: 20px;">Ok</button>
+                                      </div>
+                        </form>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <script>
+                    $('button').click(function(){
+                        var value = $('#num').val();
+                        alert("Table booked for " + value +" people.");
+                    });
+            </script>
+    </body>
+</html>
